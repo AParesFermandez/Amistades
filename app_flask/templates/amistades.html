@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amistades</title>
+</head>
+
+<body>
+    <h1>Amistades</h1>
+    <div clas="row">
+        <div class="col-6">
+            <table>
+                <thead>
+                    <th>usuario</th>
+                    <th>Amigo</th>
+                </thead>
+
+                <tbody>
+                    <td>
+                        {nombre.usuario}
+                        {apellido.usuario}
+                    </td>
+                    <td>
+
+                    </td>
+                </tbody>
+
+            </table>
+            <div class="col-6">
+                <form action="/agregar/usuario" method="POST">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido">
+                    <button>Añadir Usuario</button>
+                </form>
+                <form action="/crear/amistad" method="POST">
+                    <label for="usuarios">
+                        <select name="usuarios" id="usuarios">
+                            <option value="Amy Giver">Amy Giver</option>
+                            <option value="Eli Byers">Eli Byers</option>
+                            <option value="Marky Mark">Marky Mark</option>
+                            <option value="Big Bird">Big Bird</option>
+                        </select>
+                    </label>
+                    <label for="amigo">
+                        <select name="amigo" id="amigo">
+                            <option value="Amy Giver">Amy Giver</option>
+                            <option value="Eli Byers">Eli Byers</option>
+                            <option value="Marky Mark">Marky Mark</option>
+                            <option value="Big Bird">Big Bird</option>
+                        </select>
+                    </label>
+                    <button>Crear</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
